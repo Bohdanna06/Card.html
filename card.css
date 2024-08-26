@@ -16,14 +16,6 @@
 
 
 }
-/* .header::after{
-    content: url('./assets/images/chart-line.png');
-    position: absolute;
-    right:20px;
-    bottom: 50px; */
-
-
-
 .number{
     font-weight: bold;
     font-size: 36px;
