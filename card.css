@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.card-text{
+    display: block;
+    position: absolute;
+    transform: translate(20px,20px);
+    z-index: 1px;
+}
+.header{
+    font-size: 17px;
+    margin:0;
+
+
+}
+/* .header::after{
+    content: url('./assets/images/chart-line.png');
+    position: absolute;
+    right:20px;
+    bottom: 50px; */
+
+
+
+.number{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 10px 0 30px 0;
+
+}
+.increased{
+    font-size: 14px;
+
+}
+.card{
+    position: relative;
+    display: inline-block;
+    border-radius: 2%;
+    width: 400px;
+    height: 200px;
+    border: 2px;
+    padding:20px;
+    margin: 10px;
+    color: azure;
+    overflow: hidden;
+}
+
+.first-card:nth-child(3n+1){
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,2,138,0) 0%, rgba(240,7,117,0.36458333333333337) 0%, rgba(255,49,8,0.6418942577030813) 43%, rgba(255,0,0,0.9500175070028011) 100%);
+    border: solid linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,2,138,0) 0%, rgba(240,7,117,0.36458333333333337) 0%, rgba(255,49,8,0.6418942577030813) 43%, rgba(255,0,0,0.9500175070028011) 100%);;
+}
+.first-card::after{
+    content: url('./assets/images/chart-line.png');
+    position: absolute;
+    right:20px;
+    bottom: 50px;
+}
+
+.card::after,
+.card::before{
+    content: ' ';
+    position: absolute;
+    background-color: hwb(0 100% 0%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.2;
+    
+}
+.card::after{
+    bottom: -100px;
+    right: -10px;
+}
+.card::before{
+    top:-50px;
+    left: 250px;
+}
+.card:hover:after{
+    position: absolute;
+    transform: translate(-240px,-240px);
+
+}
+.card:hover::before{
+    position: absolute;
+    transform: translate(50px,100px);
+
+}
+.second-card:nth-child(3n+2){
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,2,138,0) 0%, rgba(240,7,117,0.36458333333333337) 0%, rgba(22,160,208,0.8267682072829132) 0%, rgba(8,158,255,0.7343312324929971) 43%, rgba(0,74,255,0.8799894957983193) 100%);
+}
+
+.third-card:nth-child(3n){
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,2,138,0) 0%, rgba(240,7,117,0.36458333333333337) 0%, rgba(22,160,208,0.8267682072829132) 0%, rgba(4,241,139,0.8155637254901961) 0%, rgba(8,255,173,0.6671043417366946) 43%, rgba(0,255,136,0.8911939775910365) 100%);
+}
